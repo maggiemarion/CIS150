@@ -40,6 +40,8 @@ char getLetter(double grade)
     else if (grade >= 90.0)
     {
         return 'A';
+    } else {
+        return ' '; //this is importaint!
     }
 }
 
@@ -56,7 +58,7 @@ void getExam(double& exam1Score, double& exam2Score, double points)
     {
         cout << "Enter the first exam grade out of 30: ";
         cin >> exam1;
-        if (exam1 < 0 || exam1 > 30)
+        if (exam1 < 0 || exam1 > 30) //Change this to while, if you don't unsersant why, ask.
         {
             cout << "Please enter a valid point value: ";
             cin >> exam1;
@@ -175,17 +177,14 @@ void getLab(double& lab1Score, double& lab2Score, double& lab3Score, double& lab
 
 void printLab(double lab1Score, double lab2Score, double lab3Score, double lab4Score, double labAverage, double weight)
 {
-    cout << "Lab 1: " << lab1Score << "  Lab 2: " << lab2Score << "  Lab 3: " << lab3Score << endl << "  Lab 4: " << lab4Score << endl << "Lab Average: " << labAverage << endl << "Lab Percentage of Student Grade: " << weight * 100 << "%\n";
+    cout << "Lab 1: " << lab1Score << "  Lab 2: " << lab2Score << "  Lab 3: " << lab3Score  << "  Lab 4: " << lab4Score << endl << "Lab Average: " << labAverage << endl << "Lab Percentage of Student Grade: " << weight * 100 << "%\n";
     cout << endl;
 }
 
 
-
-
 int main()
 {
-    int count = 0;
-    for (; count < 3; count++)
+    for (int count = 0; count < 3; count++)
     {
         string fullname;
         int studnum;
