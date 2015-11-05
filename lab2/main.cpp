@@ -132,6 +132,7 @@ void printLab(double lab1Score, double lab2Score, double lab3Score, double lab4S
 
 int main()
 {
+    double classExam1=0.0,classExam2=0.0,classProgram1=0.0,classProgram2=0.0,classProgram3=0.0,classLab1=0.0,classLab2=0.0,classLab3=0.0,classLab4=0.0,classExamAverage=0.0,classProgramAverage=0.0,classLabAverage=0.0;
     for (int count = 0; count < 3; count++)
     {
         string fullname;
@@ -149,8 +150,21 @@ int main()
         printProgram(program1, program2, program3, programAverage(program1, program2, program3), weight);
         getLab(lab1, lab2, lab3, lab4, lab);
         printLab(lab1, lab2, lab3, lab4, labAverage(lab1, lab2, lab3, lab4), weight);
+        classExam1=exam1+classExam1;
+        classExam2=exam2+classExam2;
+        classExamAverage=examAverage(exam1, exam2)+classExamAverage;
+        classProgram1=program1+classProgram1;
+        classProgram2=program2+classProgram2;
+        classProgram3=program3+classProgram3;
+        classProgramAverage=programAverage(program1, program2, program3)+classProgramAverage;
+        classLab1=lab1+classLab1;
+        classLab2=lab2+classLab2;
+        classLab3=lab3+classLab3;
+        classLab4=lab4+classLab4;
+        classLabAverage=labAverage(lab1, lab2, lab3, lab4)+classLabAverage;
         cin.ignore();
     }
+    //print everything here. don't make a new function!
     system("pause");
     return 0;
 }
