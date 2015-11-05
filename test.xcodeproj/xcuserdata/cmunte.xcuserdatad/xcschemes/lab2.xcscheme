@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6C2E053A1BA9EA1C000036F3"
-               BuildableName = "test"
-               BlueprintName = "test"
+               BlueprintIdentifier = "6CC452D41BEBE075007EDDD2"
+               BuildableName = "lab2"
+               BlueprintName = "lab2"
                ReferencedContainer = "container:test.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6C2E053A1BA9EA1C000036F3"
-            BuildableName = "test"
-            BlueprintName = "test"
+            BlueprintIdentifier = "6CC452D41BEBE075007EDDD2"
+            BuildableName = "lab2"
+            BlueprintName = "lab2"
             ReferencedContainer = "container:test.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6C2E053A1BA9EA1C000036F3"
-            BuildableName = "test"
-            BlueprintName = "test"
+            BlueprintIdentifier = "6CC452D41BEBE075007EDDD2"
+            BuildableName = "lab2"
+            BlueprintName = "lab2"
             ReferencedContainer = "container:test.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6C2E053A1BA9EA1C000036F3"
-            BuildableName = "test"
-            BlueprintName = "test"
+            BlueprintIdentifier = "6CC452D41BEBE075007EDDD2"
+            BuildableName = "lab2"
+            BlueprintName = "lab2"
             ReferencedContainer = "container:test.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
