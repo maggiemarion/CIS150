@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  lab
-//
-//  Created by Christian Munte on 9/21/15.
-//  Copyright © 2015 Christian Munte. All rights reserved.
-//
-
 #include <iostream>
 #include <string>
 #include <iomanip>

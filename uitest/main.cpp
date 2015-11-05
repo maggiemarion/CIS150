@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  uitest
-//
-//  Created by Christian Munte on 10/12/15.
-//  Copyright © 2015 Christian Munte. All rights reserved.
-//
-
 #include <iostream>
 #include <cmath>
 #include <string>

@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  lab2
-//
-//  Created by Christian Munte on 11/5/15.
-//  Copyright © 2015 Christian Munte. All rights reserved.
-//
-
 #include <iostream>
 #include <string>
 using namespace std;
