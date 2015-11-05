@@ -188,7 +188,7 @@ int main()
     {
         string fullname;
         int studnum;
-        welcome(fullname, studnum);
+        welcome(fullname,studnum);
         cout << fullname << " " << studnum << endl;
         const double weight = 0.25;
         const int exam = 30;
@@ -201,8 +201,8 @@ int main()
         printProgram(program1, program2, program3, programAverage(program1, program2, program3), weight);
         getLab(lab1, lab2, lab3, lab4, lab);
         printLab(lab1, lab2, lab3, lab4, labAverage(lab1, lab2, lab3, lab4), weight);
+        cin.ignore();
     }
-    
     system("pause");
     return 0;
 }
