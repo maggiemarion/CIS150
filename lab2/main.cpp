@@ -37,34 +37,31 @@ char getLetter(double grade)
     }
 }
 
+int getInput(int maxPoints) {
+    int points;
+    cin >> points;
+    while (points < 0 || points > maxPoints) {
+        cout << points << " is not a valid value, please enter a valid value: ";
+        cin >> points;
+    }
+    return points;
+}
+
 double examAverage(double exam1, double exam2)
 {
     double total = exam1 + exam2;
     return total / 2;
 }
 
-void getExam(double& exam1Score, double& exam2Score, double points)
+void getExam(double& exam1Score, double& exam2Score, double exampoints)
 {
     double exam1, exam2;
-    do
-    {
-        cout << "Enter the first exam grade out of 30: ";
-        cin >> exam1;
-        if (exam1 < 0 || exam1 > 30) //Change this to while, if you don't unsersant why, ask.
-        {
-            cout << "Please enter a valid point value: ";
-            cin >> exam1;
-        }
-        exam1Score = (exam1 / points) * 100;
-        cout << "Enter the second exam grade out of 30: ";
-        cin >> exam2;
-        if (exam2 < 0 || exam2 > 30)
-        {
-            cout << "Please enter a valid point value: ";
-            cin >> exam2;
-        }
-        exam2Score = (exam2 / points) * 100;
-    } while ((exam1 < 0 || exam1 > 30) && (exam2 < 0 || exam2 > 30));
+    cout << "Enter the first exam grade out of 30: ";
+    exam1 = getInput(exampoints);
+    exam1Score = (exam1 / exampoints) * 100;
+    cout << "Enter the second exam grade out of 30: ";
+    exam2 = getInput(exampoints);
+    exam2Score = (exam2 / exampoints) * 100;
 }
 
 void printExam(double exam1Score, double exam2Score, double examAverage, double weight)
@@ -84,33 +81,16 @@ double programAverage(double program1, double program2, double program3)
 void getProgram(double& program1Score, double& program2Score, double& program3Score, double programpoints)
 {
     double program1, program2, program3;
-    do
-    {
-        cout << "Enter the first program grade out of 25: ";
-        cin >> program1;
-        if (program1 < 0 || program1 > 25)
-        {
-            cout << "Please enter a valid point value: ";
-            cin >> program1;
-        }
-        program1Score = (program1 / programpoints) * 100;
-        cout << "Enter the second program grade out of 25: ";
-        cin >> program2;
-        if (program2 < 0 || program2 > 25)
-        {
-            cout << "Please enter a valid point value: ";
-            cin >> program2;
-        }
-        program2Score = (program2 / programpoints) * 100;
-        cout << "Enter the third program grade out of 25: ";
-        cin >> program3;
-        if (program3 < 0 || program3 > 25)
-        {
-            cout << "Please enter a valid point value: ";
-            cin >> program3;
-        }
-        program3Score = (program3 / programpoints) * 100;
-    } while ((program1 < 0 || program1 > 25) && (program2 < 0 || program2 > 25) && (program3 < 0 || program3 > 25));
+    cout << "Enter the first program grade out of 25: ";
+    program1 = getInput(programpoints);
+    program1Score = (program1 / programpoints) * 100;
+    cout << "Enter the second program grade out of 25: ";
+    program2 = getInput(programpoints);
+    program2Score = (program2 / programpoints) * 100;
+    cout << "Enter the third program grade out of 25: ";
+    program3 = getInput(programpoints);
+    program3Score = (program3 / programpoints) * 100;
+
 }
 
 void printProgram(double program1Score, double program2Score, double program3Score, double programAverage, double weight)
@@ -128,42 +108,18 @@ double labAverage(double lab1, double lab2, double lab3, double lab4)
 void getLab(double& lab1Score, double& lab2Score, double& lab3Score, double& lab4Score, double labpoints)
 {
     double lab1, lab2, lab3, lab4;
-    do
-    {
-        cout << "Enter the first lab grade out of 25: ";
-        cin >> lab1;
-        if (lab1 < 0 || lab1 > 25)
-        {
-            cout << "Please enter a valid point value: ";
-            cin >> lab1;
-        }
-        lab1Score = (lab1 / labpoints) * 100;
-        cout << "Enter the second lab grade out of 25: ";
-        cin >> lab2;
-        if (lab2 < 0 || lab2 > 25)
-        {
-            cout << "Please enter a valid point value: ";
-            cin >> lab2;
-        }
-        lab2Score = (lab2 / labpoints) * 100;
-        cout << "Enter the third lab grade out of 25: ";
-        cin >> lab3;
-        if (lab3 < 0 || lab3 > 25)
-        {
-            cout << "Please enter a valid point value: ";
-            cin >> lab3;
-        }
-        lab3Score = (lab3 / labpoints) * 100;
-        cout << "Enter the fourth lab grade out of 25: ";
-        cin >> lab4;
-        if (lab4 < 0 || lab4 > 25)
-        {
-            cout << "Please enter a valid point value: ";
-            cin >> lab4;
-        }
-        lab4Score = (lab4 / labpoints) * 100;
-        
-    } while ((lab1 < 0 || lab1 > 25) && (lab2 < 0 || lab2 > 25) && (lab3 < 0 || lab3 > 25) && (lab4 < 0 || lab4 > 25));
+    cout << "Enter the first lab grade out of 25: ";
+    lab1 = getInput(labpoints);
+    lab1Score = (lab1 / labpoints) * 100;
+    cout << "Enter the second lab grade out of 25: ";
+    lab2 = getInput(labpoints);
+    lab2Score = (lab2 / labpoints) * 100;
+    cout << "Enter the third lab grade out of 25: ";
+    lab3 = getInput(labpoints);
+    lab3Score = (lab3 / labpoints) * 100;
+    cout << "Enter the fourth lab grade out of 25: ";
+    lab4 = getInput(labpoints);
+    lab4Score = (lab4 / labpoints) * 100;
 }
 
 
